@@ -1,0 +1,190 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{\tiny$\bullet$}}}}}
+\newcommand{\descript}[1]{\color{subheadings}\raggedright\hspace*{0pt}\hfill\vspace{3pt}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Liam Johnson} \\ \vspace{1pt}
+    \large{Aspiring Ceramic Engineer} \\ \vspace{4pt}
+    \small \raisebox{-0.1\height}\faMapMarkerAlt\ San Diego, California ~ \raisebox{-0.1\height}\faPhone\ +1 (234) 555-1234 ~ \href{mailto:help@enhancv.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{help@enhancv.com}} ~ 
+    \href{https://linkedin.com/in/liam-johnson}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/liam-johnson}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California San Diego}{January 2019 -- January 2023}
+      {Bachelor of Science in Materials Science and Engineering}{San Diego, California}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    \begin{multicols}{3}
+        \begin{itemize}[itemsep=-5pt, parsep=3pt]
+            \item\small Ceramic Processing and Design
+            \item\small Thermodynamics of Materials
+            \item\small Materials Characterization
+            \item\small Mechanical Behavior of Materials
+            \item\small Kiln and Furnace Technology
+            \item\small Phase Transformations
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+    
+%-----------Experience-----------%
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Materials Science Lab, UC San Diego}{June 2022 -- December 2022}
+      {Undergraduate Research Assistant}{San Diego, CA}
+      \resumeItemListStart
+        \resumeItem{Performed hands-on analysis of ceramic tile properties and refractory wear to improve product quality.}
+        \resumeItem{Optimized kiln firing profiles for industrial-grade ceramic tiles to enhance product durability and process efficiency.}
+        \resumeItem{Utilized Scanning Electron Microscopy (SEM) and X-ray Diffraction (XRD) for material characterization, documenting findings in detailed technical reports for faculty review.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------%
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ceramic Tile Quality Optimization}{Fall 2022}
+      {Material Analysis, Kiln Process Optimization, Quality Control}{}
+      \resumeItemListStart
+        \resumeItem{Conducted comprehensive process optimization and quality analysis for commercial ceramic tiles.}
+        \resumeItem{Performed hands-on analysis of tile properties and refractory wear to identify areas for improvement in a simulated production environment, boosting potential yield by 10\%.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Kiln Performance and Refractory Enhancement}{Spring 2023}
+      {Refractory Testing, Kiln Optimization, Material Selection}{}
+      \resumeItemListStart
+        \resumeItem{Applied expertise in selecting and testing refractory materials to optimize kiln performance and improve the quality of high-volume ceramic tile production.}
+        \resumeItem{Optimized kiln firing profiles for industrial-grade ceramic tiles and castable refractories, enhancing product durability and process efficiency.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+\section{Awards \& Achievements}
+\begin{itemize}[leftmargin=0.35in, itemsep=0pt, label={\tiny$\bullet$}]
+    \item \small\textbf{Senior Design Project Award} \hfill \small\textbf{May 2023} \\
+    Awarded for developing an innovative method for testing the thermal shock resistance of industrial refractory bricks, resulting in a 15\% improvement in material selection accuracy.
+\end{itemize}
+   
+\vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.35in, itemsep=0pt, label={\tiny$\bullet$}]
+     \item \textbf{Analysis}{: Ceramic Material Analysis, Refractory Selection \& Testing, Quality Control, Technical Reporting}
+     \item \textbf{Characterization}{: Scanning Electron Microscopy (SEM), X-ray Diffraction (XRD), Thermal Analysis}
+     \item \textbf{Processes}{: Kiln Process Optimization, Ceramic Processing \& Design, Furnace Technology}
+     \item \textbf{Software}{: Process Simulation Software (e.g., COMSOL), MATLAB, Python, MS Office Suite}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------INVOLVEMENT---------------
+\section{Extracurricular Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheading{American Ceramic Society (ACerS) Student Chapter}{September 2020 -- January 2023}{Active Member}{UC San Diego}
+            \resumeItemListStart
+                \resumeItem{Actively participated in workshops and site visits to local manufacturing facilities.}
+                \resumeItem{Gained practical insight into industrial ceramic processing, quality control, and large-scale applications.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
